@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    int arreglo[] = {1, 0, 0, 1, 5};
+    int lon = sizeof(arreglo) / sizeof(arreglo[0]);
+    int num;
+
+    printf("Ingrese un número: ");
+    scanf("%d", &num);
+
+    for (int j = 0; j < lon; j++) {
+        arreglo[j] += num;
+    }
+
+    printf("El arreglo: ");
+    for (int j = 0; j < lon; j++) {
+        printf("%d ", arreglo[j]);
+    }
+    printf("\n");
+
+    return 0;
+}
